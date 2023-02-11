@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+  <title>Super Mario Bros - O Filme</title>
+</head>
+  <body>
+
+    <div class="fundo-video">
+      <video class="video" autoplay loop muted>
+        <source src="./src/Video/video-mario.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+    <header class="cabecalho">
+      <a>
+        <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="logo chapéu Mario">
+      </a>
+
+     
+        
+
+      <nav>
+        <ul class="menu">
+          <li><a href="https://www.youtube.com/watch?v=abaeIERLQkw&list=PLZqNhrXjX_PYxmaPqXsMdEncE1EaAZ6oP" target="_blank">Trilha sonora</a></li>
+          <li><a href="https://supermario-game.com/pt" target="_blank">Jogue Online</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Super_Mario_Bros._(filme)" target="_blank">Wikipedia</a></li>
+        </ul>
+      </nav> 
+    </header>
+    <main class="container">
+      <div class="informacoes">
+        <img class="imagem-titulo" src="./src/imagens/titulo.png" alt="imagem do título do filme">
+        <p class="descricao">
+          Super Mario Bros, é um filme baseado na série de video games, da Nintendo. Em Super Mario Bros. - O Filme, Mario (Chris Pratt) é um encanador qualquer no bairro de Brooklyn junto com seu irmão Luigi (Charlie Day). Um dia, Mario e Luigi vão para no reino dos cogumelos, governado pela Princesa Peach (Anya Taylor-Joy), mas ameaçado pelo rei dos Koopas, Bowser (Jack Black), que vai fazer de tudo para conseguir reinar todos os lugares.
+          <span id="pontos">...</span> 
+          <span id="mais">
+          <br>
+          É então quando Luigi é raptado por Bowser e o usa para procurar Mario, o único capaz de deter o Koopa e reestabelexcer a paz. Mario terá que aprender como viver nesse novo reino perigoso, passando por vários biomas, aprender a dirigir carros, utilizar itens que o fazem soltar bolas de fogo das mãos, virar um animal e andar em plataformas nada confiáveis.</span>
+        </p>
+        
+          <button class="botao-leia-mais" onclick="leiaMais()" id="btnLeiaMais">Leia Mais</button>
+          <br>
+          <button class="botao-trailer">Veja o trailer</button>   
+      </div>
+       <img class="mario" src="./src/imagens/super-mario-chars.png" >
+
+      <div class="modal">
+        <div class="conteudo-modal">
+          <span class="fechar-modal">X</span>
+          <iframe id=video width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </main> 
+    
+    <script src="./src/js/index.js"></script>
+
+  </body>
+</html>
